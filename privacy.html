@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wonder Walkies</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="./"><h2 class="logo">Wonder Walkies</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay class="video"></video>
+            <img src="./images/bgimage.png" alt="" class="bgimage">
+            
+            <div class="overlay"></div>
+            
+            <div class="details">
+                <h2>Privacy Policy</h2><br>
+                <h3>Protecting Your Privacy</h3>
+                To support upcoming changes on 25th May in European data law, known as GDPR and we've updated our Privacy Policy. Our new policies provide clear information on how we handle, store and protect your personal data.<br><br>
+
+                <h3>Your right to withdraw consent</h3>
+                Whenever you have given us your consent to use your personal data, you have the right to change your mind at any time and withdraw that consent however we will still be required to hold your information for 5 years if you have used our services and we have invoiced you.<br><br>
+
+                <h2>Protecting Your Privacy Statement</h2>
+                <p>
+                    Protecting Your Privacy effective from 20th May 2018
+                </p>
+                <p>
+                    <h3>Consent</h3>
+                    In specific situations, we can collect and process your data with your consent.<br>
+                    When collecting your personal data, we'll always make clear to you which data is necessary in connection with a particular service.<br><br>
+                    
+                    <h3>Contractual obligations</h3>
+                    In certain circumstances, we need your personal data to comply with our contractual obligations to provide a service.<br><br>
+                    
+                    <h3>Legal compliance</h3>
+                    If the law requires us to, we may need to collect and process your data.<br><br>
+                    
+                    <h3>Legitimate interest</h3>
+                    In specific situations, we require your data to pursue our legitimate interests in a way which might reasonably be expected as part of running our business and which does not materially impact your rights, freedom or interests.<br><br>
+                    
+                    <h3>Your right to withdraw consent</h3>
+                    Whenever you have given us your consent to use your personal data, you have the right to change your mind at any time and withdraw that consent however we will still be required to hold your information under contractual obligations if you have used our services and we have invoiced you, this information will be held for five years.<br><br>
+                    
+                    <h3>What sort of personal data do we collect?</h3>
+                    If you request a quotation we will process contact information and details of the service to be provided. If you request a service from Furry Footfalls we will require only information and personal data, detailed on our registration form relevant to providing the requested service. Your social media username, if you interact with us through those channels, to help us respond to your comments, questions or feedback.<br><br>
+                    
+                    <h3>How your data is stored?</h3>
+                    We know how much data security matters to all our customers. With this in mind we will treat your data with the utmost care and take all appropriate steps to protect it.<br>
+                    
+                    Access to your personal data is password protected when held in cloud-based software or secured in a locked cabinet.<br>
+                    
+                    The systems used for processing and storing your data are password protected and encrypted (please see their own privacy statements by using the links below).<br><br>
+                    
+                    <h3>How long will we keep your personal data?</h3>
+                    Whenever we collect or process your personal data, we'll only keep it for as long as is necessary for the purpose for which it was collected.<br>
+                    
+                    At the end of that retention period, your data will either be deleted completely or anonymised, for example by aggregation with other data so that it can be used in a non-identifiable way for statistical analysis and business planning.<br><br>
+                    
+                    <h3>Service requests</h3>
+                    When you place an order, we'll keep the personal data you give us for five years so we can comply with our legal and contractual obligations.<br><br>
+                    
+                    Compliance of online software Privacy Statements<br><br>
+                    
+                    <a href="https://www.microsoft.com/en-us/trustcenter/privacy/" target="_blank">Privacy Policy for Microsoft</a><br>
+                    <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy for Google</a>
+                </p>
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/WonderWalkiesPetServices" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer">© 2016 by Wonder Walkies</p>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./service-prices.html">Services & Pricing</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./offers.html">Special Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./terms.html">T&Cs</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+
+    </body>
+</html>

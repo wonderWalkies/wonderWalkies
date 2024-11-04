@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wonder Walkies</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="./"><h2 class="logo">Wonder Walkies</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay class="video"></video>
+            <img src="./images/bgimage.png" alt="" class="bgimage">
+            
+            <div class="overlay"></div>
+            
+            <div class="text">
+                <h2>About Me</h2>
+                <p>Hi, I am a University graduate, with a BSc Hons degree in Animal Science. I have had a passion for animals all my life, and have had 15+ years of professional and personal experience. This includes vet's, kennels & catterys, stables, farms, pet shops and personal experience in animal care. I am also fully insured with a DBS check.</p>
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/WonderWalkiesPetServices" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer">© 2016 by Wonder Walkies</p>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./service-prices.html">Services & Pricing</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./offers.html">Special Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./terms.html">T&Cs</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+
+    </body>
+</html>

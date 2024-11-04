@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wonder Walkies</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="./"><h2 class="logo">Wonder Walkies</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay class="video"></video>
+            <img src="./images/bgimage.png" alt="" class="bgimage">
+            
+            <div class="overlay"></div>
+            
+            <div class="text">
+                <h2>Special Offers!</h2>
+                <h3>Refer a friend</h3>
+                <p>
+                    I have an introductory 'recommend a friend' offer. If you <i>successfully</i> recommend a friend for any of my services, BOTH you and your friend get a FREE 30-minute walk for your dogs! This is NOT a one-time offer either; you can 'claim' this as many times as you like (so you can recommend as many friends as you like!), and each successful recommendation gets you a FREE 30-minute walk!
+                </p>
+                <h4>* Walks must be claimed within 1 month, subject to availability *</h4>
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/WonderWalkiesPetServices" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer">© 2016 by Wonder Walkies</p>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./service-prices.html">Services & Pricing</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./offers.html">Special Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./terms.html">T&Cs</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+
+    </body>
+</html>

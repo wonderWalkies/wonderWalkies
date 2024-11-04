@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wonder Walkies</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="./"><h2 class="logo">Wonder Walkies</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay class="video"></video>
+            <img src="./images/bgimage.png" alt="" class="bgimage">
+            
+            <div class="overlay"></div>
+            
+            <div class="text details">
+                <h2>Services</h2>
+                <p>I offer various pet services, all reasonably priced and professional. These include dog walking, pet sitting and grooming. I am happy with any breed or size, and have experience from small westies and terriers up to huskies and St Bernards! I cover the BS36 & BS37.</p>
+
+                <h2>Pricing</h2>
+                <table class="services">
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><h3>Dog Walking</h3></li>
+                                <li>£18/hour solo walk</li>
+                                <li>£15/hour group walk</li>
+                                <li>£10/extra dog owned by the same client</li>
+                                <li>On or off lead work available.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="./images/walking.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><h3>Pet Sitting</h3></li>
+                                <li>Up to £50 for up to 24 hour</li>
+                                <li>£25/extra dog owned by the same client per day</li>
+                                <li>Cats are £15 extra per day</li>
+                                <li>Other extra pets are not charged</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="./images/sitting.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><h3>Grooming</h3></li>
+                                <li>£25 - bath & nails</li>
+                                <li>Up to £50 for a full groom, depending on size & current condition</li>
+                                <li>Basic bespoke dog gromming</li>
+                                <li>Cats are £15 extra per day</li>
+                                <li><h4>* Not professionally qualified *</h4></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="./images/clipped.jpg" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><h3>Pet Pop-ins</h3></li>
+                                <li>£8 for 30 minute pop in</li>
+                                <li>Experience with small furries, reptiles, cats, horses and livestock</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img src="./images/pop-in.jpg" alt="">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/WonderWalkiesPetServices" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer">© 2016 by Wonder Walkies</p>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./service-prices.html">Services & Pricing</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./offers.html">Special Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./terms.html">T&Cs</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+
+    </body>
+</html>

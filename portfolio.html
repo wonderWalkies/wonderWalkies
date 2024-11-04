@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wonder Walkies</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <a href="./"><h2 class="logo">Wonder Walkies</h2></a>
+                <div class="toggle"></div>
+            </header>
+            <video src="./video/background.mp4" muted loop autoplay class="video"></video>
+            <img src="./images/bgimage.png" alt="" class="bgimage">
+            
+            <div class="overlay"></div>
+            
+            <div class="details">
+                <h2>Portfolio</h2>
+                <p>
+                    I mainly work with dogs, as I love their breed varieties and willingness to work and live so closely with humans. I know a lot about animal behaviour and nutrition, and when caring for any animal I try to incorporate this into all my work to help the owners as well.
+                </p>
+                <p>
+                    Below are just a few pictures of the various animals I have worked with, as well as some photography examples!
+                </p>
+
+                <h2>Reviews</h2>
+                <!-- <p class="review">
+                    Matt Francis - "Perfect service. No hassle, no fuss. Did the impossible and tired our black lab out!!!"<br><br>
+                    
+                    Ulla Sandells - "Great service! I don't trust many people with my dogs ... am really glad I have Emma and the dogs love her!" "Happy doggies xx thank you so much Emma xx"<br><br>
+                    
+                    Trudy Walmsley - ""I have used Emma's dog walking service for over two years. She is very reliable and Nellie adores her. I am more than happy to provide references and I cannot recommend her highly enough."<br><br>
+                    
+                    Sarah O'Leary - "Ah our Lily loves Emma...she does an amazing job taking her walkies every Wednesday and has been an absolute god send for regular pet sitting!!! Great service, professional and a very lovely girl! Would definitely recommend for all counts of services she provides!!!"<br><br>
+                    
+                    Becky Elliott - "OUR DOG LOVES EMMA - and so do we!! She's reliable, great with dogs and just a very nice person to have in your home when you're away. She also sends us regular pup-dates with videos/photos of our little man. Highly recommended!!"<br><br>
+                    
+                    Ella Burt - "Emma has been truly fantastic with our rescue girl who is reactive to dogs, and some people - we are definitely not an easy customer. She is kind hearted, and has taken on board all of the training regimes we are following with our behaviourist. It's fantastic to also know she's staying in the house when we are away so it doesn't upset Texas' routine, and even shared her bed with her in the morning. We can't thank Emma enough, and I would highly recommend her services!"<br><br>
+                    
+                    Sophie Jones - "Emma, you were a star! Thank you so much for looking after Tilly and doing an AMAZING job to bring her to our wedding to take part in our family photos. You were so helpful and clearly adore being with animals, I highly recommend others to get in touch and I'm sure we will be in the future x"
+                </p> -->
+            </div>
+
+            <ul class="social">
+                <li><a href="https://www.facebook.com/WonderWalkiesPetServices" target="_blank"><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer">© 2016 by Wonder Walkies</p>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./service-prices.html">Services & Pricing</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./offers.html">Special Offers</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./terms.html">T&Cs</a></li>
+                <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+
+    </body>
+</html>
