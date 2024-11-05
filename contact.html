@@ -20,19 +20,20 @@
             
             <div class="text">
                 <h2>Contact</h2>
-                <!-- Register formspree account for Emma -->
-                <form action="INSERT HERE" method="POST">
+                <form action="https://formsubmit.co/el/bejego" method="POST">
                     <label for="name">Name:</label>
-                    <input type="text" name="name" required>
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="subject">Subject:</label>
-                    <input type="subject" name="subject" required>
+                    <input type="subject" id="subject" name="subject" required>
 
                     <label for="message">Message:</label>
-                    <textarea name="message" required></textarea>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <input type="hidden" name="_captcha" value="false">
 
                     <button type="submit">Send</button>
                 </form>
